@@ -2,9 +2,9 @@
     "manifest_version": 2, 
     "name": "Attendance", 
     "version": "1.0", 
-    "permissions": ["<all_urls>"], 
     "browser_action": { 
-        "default_popup": "index.html" 
+        "default_popup": "index.html",
+        "default_title": "Attendance" 
     },
     "permissions": [
         "notifications",
