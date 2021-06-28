@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    width: 100px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.punch-btn {
+    background-color: cornflowerblue;
+    height: 30px;
+    color: white;
+    box-shadow: 5px 10px;
+}
