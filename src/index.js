@@ -1,7 +1,7 @@
 import schedule from 'node-schedule';
 import axios from "axios";
 
-const API_PUNCH_ENDPOINT = 'https://gommt.darwinbox.in/attendance/attendance/log?'
+const API_ENDPOINT = 'https://gommt.darwinbox.in/attendance/attendance/log?'
 const user = '5ffef5e80e46d';
 const keyName = 'pbqBeYWPUn';
 const keyVal = 'e4e1fee25297ca378085e338cf6344f7ceaf4b74';
@@ -20,7 +20,7 @@ const headers = {
 
 function punchAttendance() {
     try {
-        axios.get(`${API_PUNCH_ENDPOINT}user=${user}&${keyName}=${keyVal}`, {
+        axios.get(`${API_ENDPOINT}user=${user}&${keyName}=${keyVal}`, {
             headers
         }).then(response => {
             let notifOptions = {
